@@ -1,12 +1,17 @@
-function createImg(){
+function createImg(url){
     let img = document.createElement("img");
-    img.src = "https://cdn.britannica.com/29/150929-050-547070A1/lion-Kenya-Masai-Mara-National-Reserve.jpg";
+    img.src = url;
     img.width = 200;
     document.body.appendChild(img);
 }
 
-function
+function onButtonClick(){
+    let url = document.getElementById("imgUrl");
+    if(url && url.value){
+        createImg(url.value);
+    }
+}
  
 window.onload = function (){
-    createImg();
+    
 }
