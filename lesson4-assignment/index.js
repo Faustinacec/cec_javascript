@@ -9,9 +9,15 @@ function onClick() {
 function submitData(bottom, top) {
     const number = randomNumber(bottom, top);
     // alert(number);
-   const guess= prompt("guess the number")
+   const guess= prompt("guess the number");
+
+   if(number === parseInt(guess)){
+    alert("you got it");
+   } else { 
+    alert("you are wrong. The number is: " + number);
+   }
 }
 
 function randomNumber(min, max) {
-    return parseInt(Math.random() * (max - min) + min);
+    return Math.floor(Math.random() * (max - min + 1) + min);
 }

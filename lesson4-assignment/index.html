@@ -11,23 +11,37 @@
             border: 2px solid purple;
             width: 400px;
         }
+
+        .padding {
+            padding: 20px;
+        }
     </style>
     <title>Document</title>
 </head>
 
 <body>
-    <div class="border">
+    <div class="border padding">
         <h1>Number Guessing Game</h1>
         <p>
             pleas enter a low number and a high neaber for our gussing game range (for example: 1-100)
         </p>
+        <table>
+            <tr>
+                <td><label for="">Bottom of Range</label></td>
+                <td><Input type="text" id="bottom"></Input></td>
+            </tr>
+            <tr>
+                <td><label for="">Top of Range</label></td>
+                <td> <Input type="text" id="top"></Input>
+                </td>
+            </tr>
+        </table>
         <div>
-            <label for="">Bottom of Range</label>
-            <Input type="text" id="bottom"></Input>
+
+
         </div>
         <div>
-            <label for="">Top of Range</label>
-            <Input type="text" id="top"></Input>
+
         </div>
         <button onclick="onClick()">Play Game!</button>
 
