@@ -10,13 +10,22 @@
         width: 200px;
         margin: 10px;
     }
-    .video iframe{
+    .video iframe, #videos iframe{
         width: 200px !important;
+    }
+
+    .padding{
+        margin: 10px;
     }
    </style>
     <title>Document</title>
 </head>
+
 <body>
+    <h1>dynamic playlist</h1>
+    <div id="videos"></div>
+
+
     <h1>My playlist</h1>
     <div class="video">
         <iframe  src="https://www.youtube.com/embed/mCJIXFbHjLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -54,5 +63,7 @@
     <div class="video">
         <iframe  src="https://www.youtube.com/embed/YpGjaJ1ettI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+
+    <script src="./index.js"></script>
 </body>
 </html>
